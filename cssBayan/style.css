@@ -50,3 +50,73 @@ div:hover .hide.add {
     transition-delay: 250ms;
     display: none;
 }
+
+input {
+    height: 85vh;
+    border: none; 
+}
+input:focus ~ span {
+    color: rgb(27, 87, 128);
+}
+input:focus {
+    display: block;
+    height: 85vh;
+    border: none;
+    outline: none;
+}
+.input-img1 {
+    background: url(imgs/1.jpg) center no-repeat; 
+    background-size: contain;
+}
+.input-img1:focus{
+    background: url(imgs/1.jpg) center no-repeat ;
+    background-clip: border-box;
+    background-size: contain;
+}
+.input-img2 {
+    background: url(imgs/2.jpg) center no-repeat; 
+    background-size: contain;
+}
+.input-img2:focus{
+    background: url(imgs/2.jpg) center no-repeat;  
+    background-clip: border-box;
+    background-size: contain;
+}
+.input-img3 {
+    background: url(imgs/3.jpg) center no-repeat; 
+    background-size: contain;
+}
+.input-img3:focus{
+    background: rgb(220, 206, 188, 0.0) url(imgs/3.jpg) center no-repeat;  
+    background-clip: border-box;
+    background-size: contain;
+}
+.input-img4 {
+    background: url(imgs/4.jpg) center no-repeat; 
+    background-size: contain;
+}
+.input-img4:focus{
+    background: url(imgs/4.jpg) center no-repeat;
+    background-size: contain;
+}
+.input-img5 {
+    background: url(imgs/5.jpg) center no-repeat; 
+    background-size: contain;
+}
+.input-img5:focus{
+    background: url(imgs/5.jpg) center no-repeat;  
+    background-clip: border-box;
+    background-size: contain;
+}
+input:focus ~ span img.hide ~ span .add {
+    display: none;
+}
+input:focus ~ span .hide{
+    display: none;
+}
+input:focus ~ span {
+    color: #000;
+}
+main:hover input:focus ~ span .close {
+    display: block;
+}
