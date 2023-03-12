@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(220, 206, 188);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+main {
+    margin: 2em 10em;
+    color: rgb(27, 87, 128);
+}
+h1 {
+    padding-bottom: 2em;
+}
+.meme {
+    height: 85vh;
+}
+input {
+    cursor: pointer;
+    padding: 0;
+}
+div {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1em 0 1em;
+    border-color: rgb(0, 0, 0, 0.5);
+    border-bottom-style: solid;
+}
+span {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.image-box {
+    display: flex;
+    flex-direction: column; 
+}
