@@ -1,0 +1,140 @@
+body {
+    background-color: rgb(220, 206, 188);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+main {
+    margin: 2em 10em;
+    color: rgb(27, 87, 128);
+}
+h1 {
+    padding-bottom: 2em;
+}
+.meme-container {
+    margin: 1.5em 0 1.5em;
+    padding: 1em 0 1em;
+    width: auto;
+    height: auto;
+    border-color: rgb(0, 0, 0, 0.5);
+    border-bottom-style: solid;
+}
+div:focus, input:focus{
+    outline: 0;
+} 
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2em;
+    padding-bottom: 1em;
+}
+.hide {
+    display: none;
+}
+.list:hover .hide:not(.close) { 
+    display: block;
+}
+.list:hover .add {
+    display: block;
+}
+.meme-container:hover .hide.add {
+    display: none;
+}
+.meme-container:hover .hide.hide.close {
+    display: block;
+}
+.list:hover .meme-container:focus .hide.close {
+    display: block;
+}
+.meme-container:focus .hide.add {
+    display: none;
+}
+.meme-container:hover .meme,
+.meme-container:focus .meme {
+    display: block;
+    height: 50vh;
+    background-size: contain;
+    border: none;
+    outline: none;
+}
+.img-1 {
+  background: url(imgs/1.jpg) no-repeat center;
+  transition: 1.0s;
+}
+.img-2 {
+  background:  url(imgs/2.jpg) no-repeat center;
+  transition: 1.0s;
+}
+
+.img-3 {
+  background: url(imgs/3.jpg) no-repeat center;
+  transition: 1.0s;
+}
+.img-4 {
+  background: url(imgs/4.jpg) no-repeat center;
+  transition: 1.0s;
+}
+.img-5 {
+  background: url(imgs/5.jpg) no-repeat center;
+  transition: 1.0s;
+}
+/*---------Desktop---------------*/
+@media (min-width: 821px) {
+    .title {
+      font-size: 2em;
+    }
+    .meme-container:hover {
+      cursor: pointer;
+      transition: 0.8s;
+    }
+    .meme-container:hover {
+        scale: 105%;
+        transition: 0.5s;
+    }
+    .meme-container:hover .meme {
+      height: 70vh;
+      width: 100%;
+      background-size: contain;
+      transition: 1.5s;
+    }
+}
+/*---------Tablet---------------*/
+@media (max-width: 820px) {
+    .list {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 2em;
+    }
+    .header {
+      font-size: 1.5em;
+    }
+    .title {
+      font-size: 1em;
+    }
+}
+/*---------Mobile---------------*/
+@media (max-width: 414px) {
+    .list {
+      max-width: 320px;
+      margin: 0 auto;
+      padding: 0 1em;
+    }
+    main{
+        margin: 0;
+    }
+    .header {
+      font-size: 1.5em;
+    }
+    .title {
+      font-size: 1em;
+    }
+    .meme-container:hover .meme,
+    .meme-container:active .meme{
+      display: block;
+      height: 50vh;
+      width: 100%;
+      background-size: contain;
+      transition: 1.5s;
+    }
+}
