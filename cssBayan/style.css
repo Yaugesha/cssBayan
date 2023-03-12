@@ -47,7 +47,6 @@ div:focus, input:focus{
 .meme-container:focus ~ .hide.close {
     display: block;
 }
-.meme-container:active .meme,
 .meme-container:hover .meme,
 .meme-container:focus .meme {
     display: block;
@@ -58,24 +57,24 @@ div:focus, input:focus{
 }
 .img-1 {
   background: url(imgs/1.jpg) no-repeat center;
-  transition: 0.3s;
+  transition: 1.0s;
 }
 .img-2 {
   background:  url(imgs/2.jpg) no-repeat center;
-  transition: 0.3s;
+  transition: 1.0s;
 }
 
 .img-3 {
   background: url(imgs/3.jpg) no-repeat center;
-  transition: 0.3s;
+  transition: 1.0s;
 }
 .img-4 {
   background: url(imgs/4.jpg) no-repeat center;
-  transition: 0.3s;
+  transition: 1.0s;
 }
 .img-5 {
   background: url(imgs/5.jpg) no-repeat center;
-  transition: 0.3s;
+  transition: 1.0s;
 }
 /*---------Desktop---------------*/
 @media (min-width: 821px) {
@@ -85,6 +84,9 @@ div:focus, input:focus{
     .meme-container:hover {
       cursor: pointer;
       transition: 0.5s;
+    }
+    .meme-container:hover {
+        scale: 105%;
     }
     .meme-container:hover .meme {
       height: 70vh;
