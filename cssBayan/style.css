@@ -14,109 +14,75 @@ h1 {
 .meme {
     height: 85vh;
 }
-input {
-    cursor: pointer;
-    padding: 0;
-}
-div {
-    display: flex;
-    flex-direction: column-reverse;
+.meme-container {
+    margin: 1.5em 0 1.5em;
     padding: 1em 0 1em;
+    width: auto;
+    height: auto;
     border-color: rgb(0, 0, 0, 0.5);
     border-bottom-style: solid;
 }
-span {
-    cursor: pointer;
+div:focus, input:focus{
+    outline: 0;
+} 
+.title {
     display: flex;
     justify-content: space-between;
-}
-.image-box {
-    display: flex;
-    flex-direction: column; 
-}
-main:hover span{
-    color: #000;
-}
-main:hover .add { 
-    display: block;
+    align-items: center;
+    padding-right: 2em;
+    padding-bottom: 1em;
 }
 .hide {
     display: none;
 }
-div:hover .hide { 
+.list:hover .hide:not(.close) { 
     display: block;
 }
-div:hover .hide.add {
-    transition-delay: 250ms;
+.list:hover .add {
+    display: block;
+}
+.meme-container:hover .hide.add {
     display: none;
 }
-
-input {
-    height: 85vh;
-    border: none; 
-}
-input:focus ~ span {
-    color: rgb(27, 87, 128);
-}
-input:focus {
+.meme-container:hover .hide.close {
     display: block;
-    height: 85vh;
+} 
+.meme-container:focus ~ .hide.close {
+    display: block;
+}
+.meme-container:active .meme,
+.meme-container:hover .meme,
+.meme-container:focus .meme {
+    display: block;
+    height: 50vh;
+    background-size: contain;
     border: none;
     outline: none;
 }
-.input-img1 {
-    background: url(imgs/1.jpg) center no-repeat; 
-    background-size: contain;
+.img-1 {
+  background: url(imgs/1.jpg) no-repeat center;
+  transition: 0.3s;
 }
-.input-img1:focus{
-    background: url(imgs/1.jpg) center no-repeat ;
-    background-clip: border-box;
-    background-size: contain;
+.img-2 {
+  background:  url(imgs/2.jpg) no-repeat center;
+  transition: 0.3s;
 }
-.input-img2 {
-    background: url(imgs/2.jpg) center no-repeat; 
-    background-size: contain;
+
+.img-3 {
+  background: url(imgs/3.jpg) no-repeat center;
+  transition: 0.3s;
 }
-.input-img2:focus{
-    background: url(imgs/2.jpg) center no-repeat;  
-    background-clip: border-box;
-    background-size: contain;
+.img-4 {
+  background: url(imgs/4.jpg) no-repeat center;
+  transition: 0.3s;
 }
-.input-img3 {
-    background: url(imgs/3.jpg) center no-repeat; 
-    background-size: contain;
+.img-5 {
+  background: url(imgs/5.jpg) no-repeat center;
+  transition: 0.3s;
 }
-.input-img3:focus{
-    background: rgb(220, 206, 188, 0.0) url(imgs/3.jpg) center no-repeat;  
-    background-clip: border-box;
-    background-size: contain;
-}
-.input-img4 {
-    background: url(imgs/4.jpg) center no-repeat; 
-    background-size: contain;
-}
-.input-img4:focus{
-    background: url(imgs/4.jpg) center no-repeat;
-    background-size: contain;
-}
-.input-img5 {
-    background: url(imgs/5.jpg) center no-repeat; 
-    background-size: contain;
-}
-.input-img5:focus{
-    background: url(imgs/5.jpg) center no-repeat;  
-    background-clip: border-box;
-    background-size: contain;
-}
-input:focus ~ span img.hide ~ span .add {
-    display: none;
-}
-input:focus ~ span .hide{
-    display: none;
-}
-input:focus ~ span {
-    color: #000;
-}
-main:hover input:focus ~ span .close {
-    display: block;
+.meme-container:hover .meme {
+  height: 70vh;
+  width: 100%;
+  background-size: contain;
+  transition: 1.5s;
 }
