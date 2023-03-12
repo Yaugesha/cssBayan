@@ -77,9 +77,58 @@ div:focus, input:focus{
   background: url(imgs/5.jpg) no-repeat center;
   transition: 0.3s;
 }
-.meme-container:hover .meme {
-  height: 70vh;
-  width: 100%;
-  background-size: contain;
-  transition: 1.5s;
+/*---------Desktop---------------*/
+@media (min-width: 821px) {
+    .title {
+      font-size: 2em;
+    }
+    .meme-container:hover {
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .meme-container:hover .meme {
+      height: 70vh;
+      width: 100%;
+      background-size: contain;
+      transition: 1.5s;
+    }
+}
+/*---------Tablet---------------*/
+@media (max-width: 820px) {
+    .list {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 2em;
+    }
+    .header {
+      font-size: 1.5em;
+    }
+    .title {
+      font-size: 1em;
+    }
+}
+/*---------Mobile---------------*/
+@media (max-width: 414px) {
+    .list {
+      max-width: 320px;
+      margin: 0 auto;
+      padding: 0 1em;
+    }
+    main{
+        margin: 0;
+    }
+    .header {
+      font-size: 1.5em;
+    }
+    .title {
+      font-size: 1em;
+    }
+    .meme-container:hover .meme,
+    .meme-container:active .meme{
+      display: block;
+      height: 50vh;
+      width: 100%;
+      background-size: contain;
+      transition: 1.5s;
+    }
 }
