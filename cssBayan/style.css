@@ -34,3 +34,19 @@ span {
     display: flex;
     flex-direction: column; 
 }
+main:hover span{
+    color: #000;
+}
+main:hover .add { 
+    display: block;
+}
+.hide {
+    display: none;
+}
+div:hover .hide { 
+    display: block;
+}
+div:hover .hide.add {
+    transition-delay: 250ms;
+    display: none;
+}
