@@ -41,11 +41,14 @@ div:focus, input:focus{
 .meme-container:hover .hide.add {
     display: none;
 }
-.meme-container:hover .hide.close {
+.meme-container:hover .hide.hide.close {
     display: block;
-} 
-.meme-container:focus ~ .hide.close {
+}
+.list:hover .meme-container:focus .hide.close {
     display: block;
+}
+.meme-container:focus .hide.add {
+    display: none;
 }
 .meme-container:hover .meme,
 .meme-container:focus .meme {
@@ -83,10 +86,11 @@ div:focus, input:focus{
     }
     .meme-container:hover {
       cursor: pointer;
-      transition: 0.5s;
+      transition: 0.8s;
     }
     .meme-container:hover {
         scale: 105%;
+        transition: 0.5s;
     }
     .meme-container:hover .meme {
       height: 70vh;
